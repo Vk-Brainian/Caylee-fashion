@@ -18,3 +18,6 @@ input[type=text]{
 .fonts span {
     margin-left: 10px;
 }
+#main-bg{
+    background:url(../images/common_bg.png)
+}

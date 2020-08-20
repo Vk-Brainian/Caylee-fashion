@@ -16,42 +16,45 @@
 </head>
 
 <body>
-
     <nav class="navbar navbar-expand-md  navbar-light bg-light fixed-top">
-        <div class="navbar-brand text-white">
-            <strong> Caylee</strong>-fashion</div>
+        <div class="container p-0 pl-3">
+        <div class="navbar-brand ">
+            <strong> <img src="images/caylee_fashion.png" class="logo"></strong>
+        </div>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto ">
                 <li class="link-item">
-                    <a href="index.html" class="nav-link text-danger">HOME</a>
+                    <a href="/index.html" class="nav-link text-danger">HOME</a>
                 </li>
                 <li class="link-item">
-                    <a href="#how" class="nav-link text-danger">ABOUT</a>
+                    <a href="about.html" class="nav-link text-danger">ABOUT</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle text-danger" data-toggle="dropdown" href="#" role="button"
-                        aria-haspopup="true" aria-expanded="false">CATEGORIES</a>
+                    <a class="nav-link dropdown-toggle text-danger" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">CATEGORIES</a>
                     <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Short</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Long</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="sleeveless.html">Sleeveless</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="gown.html">Ball dress</a>
+                      <a class="dropdown-item" href="/short.html">SHORT</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">BALL DRESS</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="traditionalwear.html">TRADITIONAL WEAR</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="longsleeve.html">LONG SLEEVE</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="lace.html">LACE</a>
                     </div>
-                </li>
+                  </li>
+            
                 <li class="link-item">
-                    <a href="#how" class="nav-link text-danger">CONTACT</a>
+                    <a href="/contact.html" class="nav-link text-danger">CONTACT</a>
                 </li>
             </ul>
-        </div>
-    </nav>
+        </div>    
 
-    <section class="pb-5">
+    </nav> 
+    <section>
         <div class="container-fluid black text-dark text-center pb-5 pt-5">
             <h4 class="text-center font-weight-bold pt-5">ROVARS HALF SLEEVES BODYSUIT SWIMWEAR 5 PATCH - DARK PINK</h4>
             <p class="pt-5 mr-0">
@@ -72,24 +75,9 @@
                             <img class="mySlides" src="images/bro.jpg" style="width:100%">
                             <img class="mySlides" src="images/kids-7_10.jpg" style="width:100%">
                             <img class="mySlides" src="images/kids-9_9.jpg" style="width:100%">
-                        </div>
-
-                        <script>
-                            var myIndex = 0;
-                            carousel();
-
-                            function carousel() {
-                                var i;
-                                var x = document.getElementsByClassName("mySlides");
-                                for (i = 0; i < x.length; i++) {
-                                    x[i].style.display = "none";
-                                }
-                                myIndex++;
-                                if (myIndex > x.length) { myIndex = 1 }
-                                x[myIndex - 1].style.display = "block";
-                                setTimeout(carousel, 6000); // Change image every 6 seconds
-                            }
-                        </script>
+                          </div>
+                          
+                         
                     </div>
                 </div>
                 <div class="col-md-8">
@@ -172,33 +160,7 @@
                     <span class="sr-only">Next</span>
                 </a>
             </div>
-        </div>
-        <div>
-            <h2 class="text-left font-weight-bold pad-t-5 display-5">Related Product</h2>
-            <div class="container text-center">
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="clothe-section">
-                            <img src="images/pot1.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="clothe-section">
-                            <img src="images/pot2.jpg" class="pot" alt="">
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="clothe-section">
-                            <img src="images/pot3.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="clothe-section">
-                            <img src="images/pot4.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
         </div>
     </section>
 
@@ -269,6 +231,23 @@
     </footer>
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.js"></script>
+
+    <script>
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 6000); // Change image every 6 seconds
+        }
+        </script>
 </body>
 
 </html>

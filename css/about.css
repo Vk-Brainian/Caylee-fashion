@@ -1,12 +1,15 @@
 #main{
     height: 200px;
-    background: linear-gradient(#000000ad, #000000a3), url(../img/boy.jpg)no-repeat ;
-    background-position: 50% ;
-    width:100%;
-    background-size:cover;
-    text-align:center;
-    color:white;
+    background: linear-gradient(#000000ad, #000000a3), url(../images/sun-glass.jpg)no-repeat;
+    background-position: 50%;
+    width: 100%;
+    background-size: cover;
+    text-align: center;
+    color: white;
     background-attachment: fixed;
+    position: relative;
+    margin-top: 4rem;
+    padding-top: 19px;
 }
 
 #main h1{
@@ -87,7 +90,13 @@ div desc{
     border-radius: 50px;
 }
 
-@media(max-width: 768px){
-    
-    
+.about-celee{
+color:#c9518f;
+font-weight: 800;
+}
+.color-pink{
+    color:#c9518f;
+}
+.team img{
+    border-bottom:1px solid #cccccc;
 }
