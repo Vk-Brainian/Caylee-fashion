@@ -26,9 +26,9 @@
 .image-box img{
     max-height: 400px;
 }
-.head{
+.Size{
     height: 150px;
-    width: 90%;
+    width: 200px;
     border-radius: 50%;
 }
 
@@ -52,4 +52,19 @@
 .examples table {
     margin: 5px 0 0 0;
     font-size: 14px;
-} 
+} .clothe-section{
+    height: max-content; 
+    overflow: hidden;
+  }
+.clothe-section img {
+    transition: transform .5s ease;
+  }
+  .clothe-section:hover img {
+      background-image: url(../images/pot6.jpg);
+    
+    transition: transform .5s ease;
+  transform: scale(1.1);
+}
+.padding{
+padding-right: 300px;
+}

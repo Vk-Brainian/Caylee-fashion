@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,123 +9,206 @@
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
     <!-- bootstrap css -->
     <link rel="stylesheet" href="css/bootstrap.css">
-     <!-- bootstrap css -->
+    <!-- bootstrap css -->
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/Grace.css">
     <link rel="stylesheet" href="css/media-query.css">
-   
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-md  navbar-light bg-danger fixed-top">
+
+    <nav class="navbar navbar-expand-md  navbar-light bg-light fixed-top">
         <div class="navbar-brand text-white">
             <strong> Caylee</strong>-fashion</div>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
             <span class="navbar-toggler-icon"></span>
-            </button>
+        </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto ">
                 <li class="link-item">
-                    <a href="index.html" class="nav-link text-white">HOME</a>
+                    <a href="index.html" class="nav-link text-danger">HOME</a>
                 </li>
                 <li class="link-item">
-                    <a href="#how" class="nav-link text-white">ABOUT</a>
+                    <a href="#how" class="nav-link text-danger">ABOUT</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle text-white" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">CATEGORIES</a>
+                    <a class="nav-link dropdown-toggle text-danger" data-toggle="dropdown" href="#" role="button"
+                        aria-haspopup="true" aria-expanded="false">CATEGORIES</a>
                     <div class="dropdown-menu">
-                      <a class="dropdown-item" href="#">Short</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#">Long</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="sleeveless.html">Sleeveless</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="gown.html">Ball dress</a>
+                        <a class="dropdown-item" href="#">Short</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Long</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="sleeveless.html">Sleeveless</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="gown.html">Ball dress</a>
                     </div>
-                  </li>
+                </li>
                 <li class="link-item">
-                    <a href="#how" class="nav-link text-white">CONTACT</a>
+                    <a href="#how" class="nav-link text-danger">CONTACT</a>
                 </li>
             </ul>
-        </div> 
+        </div>
     </nav>
-    <section>
+
+    <section class="pb-5">
         <div class="container-fluid black text-dark text-center pb-5 pt-5">
             <h4 class="text-center font-weight-bold pt-5">ROVARS HALF SLEEVES BODYSUIT SWIMWEAR 5 PATCH - DARK PINK</h4>
             <p class="pt-5 mr-0">
-                <a href="index.html" class="text-danger" >Home</a><i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                <a href="gown.html" class="text-danger" >Ball dress</a><i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                <a href="index.html" class="text-danger">Home</a><i class="fa fa-angle-double-right"
+                    aria-hidden="true"></i>
+                <a href="gown.html" class="text-danger">Ball dress</a><i class="fa fa-angle-double-right"
+                    aria-hidden="true"></i>
                 Rovars Half Sleeves Bodysuit Swimwear 5 Patch - Dark Pink
-            </p> 
+            </p>
         </div>
-        
+
         <div class="container-fluid p-3">
             <div class="row  p-3">
-    
+
                 <div class="col-md-4">
-                    <div class="image-box text-center">  
+                    <div class="image-box text-center">
                         <div class="w3-content w3-section" style="max-width:500px">
                             <img class="mySlides" src="images/bro.jpg" style="width:100%">
                             <img class="mySlides" src="images/kids-7_10.jpg" style="width:100%">
                             <img class="mySlides" src="images/kids-9_9.jpg" style="width:100%">
-                          </div>
-                          
-                          <script>
-                          var myIndex = 0;
-                          carousel();
-                          
-                          function carousel() {
-                            var i;
-                            var x = document.getElementsByClassName("mySlides");
-                            for (i = 0; i < x.length; i++) {
-                              x[i].style.display = "none";  
+                        </div>
+
+                        <script>
+                            var myIndex = 0;
+                            carousel();
+
+                            function carousel() {
+                                var i;
+                                var x = document.getElementsByClassName("mySlides");
+                                for (i = 0; i < x.length; i++) {
+                                    x[i].style.display = "none";
+                                }
+                                myIndex++;
+                                if (myIndex > x.length) { myIndex = 1 }
+                                x[myIndex - 1].style.display = "block";
+                                setTimeout(carousel, 6000); // Change image every 6 seconds
                             }
-                            myIndex++;
-                            if (myIndex > x.length) {myIndex = 1}    
-                            x[myIndex-1].style.display = "block";  
-                            setTimeout(carousel, 6000); // Change image every 6 seconds
-                          }
-                          </script>
+                        </script>
                     </div>
-                </div> 
+                </div>
                 <div class="col-md-8">
                     <h3 class="text-secondary"> Rovars Half Sleeves Bodysuit Swimwear 5 Patch - Dark Pink</h3>
                     <p>Be the first to review this product</p>
                     <h3 class="text-danger">$64.00</h3>
                     <p class="text-secondary">In Stock</p>
-                    <p class="text-secondary"><strong>SKU</strong>  Jash Kids Half Sleeves      Shirt Allover Triangle Print - Peach
-                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p> 
-                        <div class="container">
-                            <P class=" m-0">Size <strong class="text-danger">*</strong></P>
-                            <select class=" custom-select-sm w-50">
-                                <option selected>--Please select--</option>
-                                <option value="1">L</option>
-                                <option value="2">XL</option>
-                                <option value="3">XXL</option>
-                              </select>
-                            <P class="m-0">patter <strong class="text-danger">*</strong></P>
-                            <select class="custom-select-sm w-50 pt-0 mt-0">
-                                <option selected>--Please select--</option>
-                                <option value="1">Straight</option>
-                                <option value="2">Curve</option>
-                            </select>
-                        </div>
+                    <p class="text-secondary"><strong>SKU</strong> Jash Kids Half Sleeves Shirt Allover Triangle Print -
+                        Peach
+                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                        alteration in some form, by injected humour, or randomised words which don't look even slightly
+                        believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't
+                        anything embarrassing hidden in the middle of text.</p>
+                    <div class="container">
+                        <P class=" m-0">Size <strong class="text-danger">*</strong></P>
+                        <select class=" custom-select-sm w-50">
+                            <option selected>--Please select--</option>
+                            <option value="1">L</option>
+                            <option value="2">XL</option>
+                            <option value="3">XXL</option>
+                        </select>
+                        <P class="m-0">patter <strong class="text-danger">*</strong></P>
+                        <select class="custom-select-sm w-50 pt-0 mt-0">
+                            <option selected>--Please select--</option>
+                            <option value="1">Straight</option>
+                            <option value="2">Curve</option>
+                        </select>
+                    </div>
                 </div>
-                
             </div>
-            <div class="bg-white">
-                <img src="images/caylee_fashion.png" class=" img-fluid head" alt="">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci repudiandae provident veniam, rerum consequuntur beatae fugiat, nostrum sequi dolorem labore asperiores? Magnam laboriosam laudantium ea deserunt et. Pariatur, numquam omnis?</p>
+        </div>
+        <div class="container-fluid black text-dark text-center pb-5 pt-5">
+            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="images/man.png" class="d-block Size" alt="...">
+                            </div>
+                            <div class="col-md-9 pt-5 text-center padding">
+                                <h5>good choice</h5>
+                                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="images/kel.png" class="d-block Size" alt="...">
+                            </div>
+                            <div class="col-md-9 pt-5 text-center padding">
+                                <h5>Second slide label</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item pb-0 pt-0">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="images/eze.PNG" class="d-block  Size" alt="...">
+                            </div>
+                            <div class="col-md-9 pt-5 text-center padding">
+                                <h5>Third slide label</h5>
+                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
-            
+        </div>
+        <div>
+            <h2 class="text-left font-weight-bold pad-t-5 display-5">Related Product</h2>
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="clothe-section">
+                            <img src="images/pot1.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="clothe-section">
+                            <img src="images/pot2.jpg" class="pot" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="clothe-section">
+                            <img src="images/pot3.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="clothe-section">
+                            <img src="images/pot4.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-    
-    <footer>
+
+    <footer class="pt-5">
         <div class="container">
             <div class="row">
                 <div class="col-md-3">
                     <img src="images/caylee_fashion.png" alt="" width="100px">
-                    <p>Lorem ipsum dolor sit amet, consect adipisicing elit, sed do eiusmod tempor inci-didunt. It is a long established will be distracted by the readable making it look like readable English.</p>
+                    <p>Lorem ipsum dolor sit amet, consect adipisicing elit, sed do eiusmod tempor inci-didunt. It is a
+                        long established will be distracted by the readable making it look like readable English.</p>
                     <div>
                         <i class="fa fa-facebook pr-3"></i>
                         <i class="fa fa-twitter pr-3"></i>
@@ -142,22 +226,28 @@
                 <div class="col-md-3">
                     <h4>Recent Style</h4>
                     <ul>
-                        <li> 
+                        <li>
                             <ul class=" d-flex list-item-section">
                                 <li><img src="images/gown/image-1.jpg" class="img-footer"></li>
-                                <li><h5>Summer Girl dress fashion</h5></li>
+                                <li>
+                                    <h5>Summer Girl dress fashion</h5>
+                                </li>
                             </ul>
                         </li>
-                        <li> 
+                        <li>
                             <ul class="d-flex list-item-section">
                                 <li><img src="images/gown/image-1.jpg" class="img-footer"></li>
-                                <li><h5>Summer Girl dress fashion</h5></li>
+                                <li>
+                                    <h5>Summer Girl dress fashion</h5>
+                                </li>
                             </ul>
                         </li>
-                        <li> 
+                        <li>
                             <ul class="d-flex list-item-section">
                                 <li><img src="images/gown/image-1.jpg" class="img-footer"></li>
-                                <li><h5>Summer Girl dress fashion</h5></li>
+                                <li>
+                                    <h5>Summer Girl dress fashion</h5>
+                                </li>
                             </ul>
                         </li>
                     </ul>
@@ -167,16 +257,18 @@
                     <p>Get Business news, tip and solutions to your problems from our experts.</p>
                     <form>
                         <input type="text" class="form-control form-subscribe">
-                       <div class="bg-danger text-center"> <button class="btn btn-danger font-800">Submit</button></div>
+                        <div class="bg-danger text-center"> <button class="btn btn-danger font-800">Submit</button>
+                        </div>
                     </form>
                 </div>
             </div>
         </div>
         <div class="copyright-section">
-            <p>	&copy; Ceeley's Fashion 2020</p>
+            <p> &copy; Ceeley's Fashion 2020</p>
         </div>
     </footer>
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.js"></script>
 </body>
+
 </html>
