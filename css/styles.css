@@ -18,7 +18,7 @@ a:hover{
     color: #4c4e56;
 }
 .breadcrumb-header{
-    background:linear-gradient(45deg, #55050570, #55050570),url(../images/banner-img.jpg);
+    background:linear-gradient(45deg, #55050570, #55050570),url(../images/shop-now.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: fixed;
@@ -191,8 +191,22 @@ a:hover{
     transition: transform .5s ease;
   transform: scale(1.1);
 }
+.cloth-section {
+    height: max-content; 
+    overflow: hidden;
+    text-align: center;
+  }
+.cloth-section img {
+    transition: transform .5s ease;
+    width: 200px;
+    height: 200px;
+  }
+  .cloth-section:hover img {
+    transition: transform .5s ease;
+  transform: scale(1.1);
+}
 .breadcrumb-header{
-    /* align-items:center; */
+     
     justify-content: center;
 }
   .carousel-img{

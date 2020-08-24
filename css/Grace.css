@@ -18,11 +18,7 @@
     transition: 1s ease-in-out;
     size: 10px;
 }
-.joke:hover{
-    color: gold;
-    cursor: pointer;
-    transform: scale(1.1);
-}
+ 
 .image-box img{
     max-height: 400px;
 }
